@@ -62,6 +62,14 @@ return {
         --   },
         -- },
         -- pickers = {}
+        -- make the window full screen
+        defaults = {
+          layout_config = {
+            width = { padding = 0 },
+            height = { padding = 0 },
+          },
+          border = false,
+        },
         extensions = {
           ['ui-select'] = {
             require('telescope.themes').get_dropdown(),
